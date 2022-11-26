@@ -5,7 +5,7 @@
 12821 -> да
 23432 -> да
 */
-
+/*
 Console.WriteLine("Введите число: ");
 string number = Console.ReadLine();
 int len = number.Length;
@@ -25,7 +25,7 @@ else
 {
     Console.WriteLine($"ОШИБКА: {number} - не является пятизначным");
 }
-
+*/
 
 /*
 Задача 21 (branch task_2)
@@ -67,18 +67,9 @@ int ReadInt(string message)
 5 -> 1, 8, 27, 64, 125
 */
 
-int number = ReadInt("Введите число N: ");
-
-for (int i = 1; i <= number; i++)
-{ 
-    Console.Write($"{i*i*i} ");
-}
-
-
-
-// Функция ввода сообщения
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
+        Console.Write("Введите число: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        for (int i = 1; i <= number; i++)
+        {
+             Console.Write($"{Math.Pow(i, 3)}. ");
+        }
